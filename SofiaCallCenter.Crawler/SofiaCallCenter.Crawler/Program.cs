@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace SofiaCallCenter.Crawler
@@ -32,7 +33,7 @@ namespace SofiaCallCenter.Crawler
                 outputFile = args[2];
             }
             
-            List<Signal> crawledSignals = CrawlSignalsFromCallSofiaBg(signalFrom, signalTo);
+            List<Signal> crawledSignals = CrawlSignalsFromCallSofiaBg(signalFrom, signalTo, 10);
 
             using(StreamWriter sw = new StreamWriter(outputFile)){
                 CsvWriter writer = new CsvWriter(sw);
@@ -48,7 +49,7 @@ namespace SofiaCallCenter.Crawler
             //Signal testSignal = CrawlSingleSignalFromCallSofiaBg(testSignalNumber);
         }
 
-        private static List<Signal> CrawlSignalsFromCallSofiaBg(int fromSignalId, int toSignalId)
+        private static List<Signal> CrawlSignalsFromCallSofiaBg(int fromSignalId, int toSignalId, int timeBetweenHttpRequestsInMiliseconds)
         {
             List<Signal> signals = new List<Signal>();
             for (int signalId = fromSignalId; signalId <= toSignalId; signalId++)
@@ -59,6 +60,7 @@ namespace SofiaCallCenter.Crawler
                     Signal signal = CrawlSingleSignalFromCallSofiaBg(signalId);
                     signals.Add(signal);
                     Console.WriteLine("DONE!");
+                    Thread.Sleep(timeBetweenHttpRequestsInMiliseconds);
                 }
                 catch (SignalHtmlStructureNotDetectedException se)
                 {

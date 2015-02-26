@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SofiaCallCenter.Crawler
 {
-    class Signal
+    public class Signal
     {
         public int Id { get; set; }
 
