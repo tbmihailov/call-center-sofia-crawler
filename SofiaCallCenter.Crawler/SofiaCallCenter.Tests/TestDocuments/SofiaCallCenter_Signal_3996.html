@@ -1,0 +1,729 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Детайли</title>
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <meta property="og:title" content="Контактен център Столична община: Детайли" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://call.sofia.bg/bg/Signal/Details?id=3996" />
+    <meta property="og:site_name" content="Контактен център Столична община" />
+    <meta property="og:image" content="/Images/Sofia_Logo_small.png" />
+    <meta property="og:description" content="Клони на тротоара" />
+
+
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="/Scripts/jqplot/excanvas.js"></script>
+    <![endif]-->
+    <script src="/bundles/jquery?v=pb0quO48usXlRizztPeR5ZSxeOYcVkPlx5uNf8N8vXw1"></script>
+
+    <script src="/bundles/jqueryui?v=P69pKAud1aBvZxnAuQdrJu79ChIWL5MJc71ZyGmBH7c1"></script>
+
+    <script src="/bundles/jqueryval?v=mRjM0qa6T8GTCa8lhmXMI_-t5fsTCmHSxo4BqkY9x4A1"></script>
+
+    <script src="/bundles/utils?v=T8yp9eVQd-ym1hGQeSMyGBC6xzotlmfD6_jnA5KXiws1"></script>
+
+    <script src="/bundles/jqgrid?v=6r4yz8C67YeruJxyVCh96EG0PJlKjCgLoVAEVV-ONLU1"></script>
+
+    <link href="/Content/css?v=o7ivmxY-RMP4tKdu-nBqlKQGFyEWpVWZL4KBYArTSM81" rel="stylesheet" />
+
+    <script src="/Scripts/respond.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Content/Print.css" media="print">
+    <link href="/Content/themes/smoothness/css?v=xaBAd_u5l4P--BC7bPioB0yKoSUUYNr2QU8DofKyU-M1" rel="stylesheet" />
+
+    <script src="/bundles/modernizr?v=qVODBytEBVVePTNtSFXgRX0NCEjh9U_Oj8ePaSiRcGg1"></script>
+
+    <link href="/Content/jqgrid/ui.jqgrid.css" rel="stylesheet" type="text/css" />
+
+    <script>
+        $(function () {
+            $.ajax({
+                cache: false
+            })
+
+            $("button").not(".zocial").button();
+            $("input[type=submit]").button();
+
+            $('ul.sf-menu').superfish({
+                delay: 500,
+                animation: { opacity: 'show', height: 'show', width: 'show' },  // fade-in and slide-down animation
+                speed: 'medium'
+            });
+
+            jQuery.validator.methods["date"] = function (value, element) {
+                try { jQuery.datepicker.parseDate('dd.mm.yy', value); return true; }
+                catch (e) { return false; }
+            }
+
+            $(".datePicker").datepicker({
+                dateFormat: 'dd.mm.yy',
+                showAnim: 'blind',
+                showOn: "button",
+                buttonImage: '/images/calendar.png',
+                changeMonth: true,
+                changeYear: true,
+                buttonImageOnly: true,
+                showButtonPanel: true
+            });
+
+            $(".details").button({ text: false, icons: { primary: "ui-icon-note" } });
+            $(".edit").button({ text: false, icons: { primary: "ui-icon-pencil" } });
+            $(".delete").button({ text: false, icons: { primary: "ui-icon-trash" } });
+        });
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-56021931-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="Wrapper">
+            <div class="clear-fix" id="header">
+                <div class="float-left">
+                    <p class="site-title"><a class="logo" href="/"> </a></p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+
+
+                        <div style="position:relative;float:right;">
+                            <ul class="sf-menu">
+                                <li><a href="/bg/Account/Login" id="loginLink">Вход</a></li>
+                                <li><a href="/bg/Account/Register" id="registerLink">Регистрация</a></li>
+                            </ul>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div id="body" class="clear-fix">
+
+        <div class="Wrapper">
+
+            <div class="clear-fix float-left" style="margin-right:15px">
+                <div class="float-left">
+                    <nav>
+                        <ul class="sf-menu sf-vertical">
+                            <li><a href="/">Начало</a></li>
+                            <li><a href="/bg/Signal/Create">Регистриране на сигнал</a></li>
+                            <li><a href="/bg/InfoRequest/Create">Искане за информация</a></li>
+                            <li><a href="/bg/FAQ/Public">Често задавани въпроси</a></a></li>
+
+
+
+                            <li>
+                                <a href="#">Помощ</a>
+                                <ul>
+                                    <li><a href="/bg/Home/HowToUseCC">Как да ползвате електронната страница</a></li>
+                                    <li><a href="/bg/Home/HowToSubmitSignal">Как да регистрирате сигнал</a></li>
+                                    <li><a href="/bg/Home/HowToSubmitInfoRequest">Как да регистрирате искане за информация</a></li>
+                                </ul>
+
+                            </li>
+
+                            <li><a href="/bg/Home/Contact">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="float-left" style="width:930px">
+
+                <div style="padding-bottom: 10px;" class="clear-fix noprint">
+                    <div class="float-left" style="padding-top:5px;">
+                    </div>
+                    <div class="float-right">
+                    </div>
+                </div>
+                <section class="featured">
+                    <div class="content-wrapper" style="text-align: right; position:relative;">
+                        <p class="status_indicator" id="statusIndicator">В процес на обработка</p>
+                        <h3>Сигнал №3996/ Към СО15-КЦ-1228-[1]/  19.03.2015 10:22:44    </h3>
+                        <h4>Екология. Зелена система / <i>Извозване на отрязани клони и храсти </i></h4>
+                    </div>
+                </section>
+
+                <section class="content-wrapper main-content clear-fix">
+
+
+                    <script type="text/javascript" src="/Scripts/jquery.tools.min.js"></script>
+                    <link rel="stylesheet" href="/Content/tools.css" />
+
+                    <style type="text/css">
+                        #map-canvas {
+                            height: 500px;
+                        }
+
+                        .ui-attached-documents {
+                            background-image: url(/images/icons/attached_documents.png);
+                        }
+
+                        .subgrid-cell .ui-helper-hidden {
+                            display: none;
+                        }
+
+                        .clerkFile {
+                            cursor: pointer;
+                            color: #206bc3;
+                        }
+                    </style>
+
+                    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlIwSud6LpB8bgFkCfgj6TqtuR7-DdxGo&amp;sensor=false&amp;language=bg">    </script>
+                    <script src="/Scripts/tinymce/tinymce.min.js"></script>
+                    <script type="text/javascript" src="/Scripts/string.js"> </script>
+                    <script type="text/javascript" src="/Scripts/google-maps-constants.js"></script>
+
+                    <script type="text/javascript">
+
+                        $("#audioCall").click(
+                                function () {
+                                    $("#audioInformation").html("");
+                                    $("#audioInformation").append('<audio controls>' +
+                                          '<source src="http://call-recorder/callrecording/common/playcall.ashx?callid=&amp;task=play" type="audio/wav">' +
+                                          'Your browser does not support the audio tag.' +
+                                        '</audio>');
+                                    $("#audioInformation").append("<br/><a href='http://call-recorder/callrecording/common/playcall.ashx?callid=&amp;task=play'>Изтегли</a>");
+                                    $("#audioInformation").dialog({
+                                        modal: true,
+                                        width: 500,
+                                        buttons: {
+                                            OK: function () {
+                                                $(this).dialog("close");
+                                            }
+                                        }
+                                    });
+                                }
+                            );
+
+                        $("#printSignal").click(function () {
+                            window.print();
+                        });
+
+                        $("#docIntegration").click(function () {
+                            window.open('aodocshow://9017792140', '_self');
+                        });
+
+                        $("#changeSubscription").click(
+                            function () {
+                                var self = $(this);
+                                var hasSubscription = $(this).hasClass("hasSubscription");
+                                $.get('/bg/Signal/Subscribe', { Status: !hasSubscription, SignalID: '3996' }, function (result) {
+                                    if (result) {
+                                        self.removeClass("hasSubscription");
+                                        self.removeClass("noSubscription");
+                                        if (hasSubscription) {
+                                            self.addClass("noSubscription");
+                                        }
+                                        else {
+                                            self.addClass("hasSubscription");
+                                        }
+                                    }
+                                })
+                            });
+
+                        var marker;
+                        var pos;
+                        var map;
+                        var district;
+
+                        var polygonMarkers = [];
+                        var polylineMarkers = [];
+
+                        function ChangeStatusIcon(statusID) {
+                            switch (statusID) {
+                                case 8:
+                                    $("#statusIndicator").addClass("status-closed");
+                                    break;
+                                case 5:
+                                    $("#statusIndicator").addClass("status-rejected");
+                                    break;
+                                default:
+                                    $("#statusIndicator").removeClass("status-rejected");
+                                    $("#statusIndicator").removeClass("status-closed");
+                                    break;
+                            }
+                        }
+
+
+                        function openLink(link) {
+                            var url = '/bg/ClerkAnswer/GetFile/-1';
+                            url = url.replace("-1", $(link).attr('data-val'));
+                            window.location.href = url;
+                        }
+
+                        $(function () {
+
+                            ChangeStatusIcon(4);
+
+                            $("#btnWaitingList").click(function () {
+                                window.location.href = '/bg/WaitingList';
+                            });
+
+
+                            $("#dialogGetLink").dialog({
+                                autoOpen: false,
+                                modal: true,
+                                width: 500,
+                                buttons: [{
+                                    text: "Затвори",
+                                    click: function () {
+                                        $(this).dialog("close");
+                                    }
+                                }]
+                            });
+                            $("#btnGetLink").click(function () {
+                                $("#dialogGetLink").dialog("open");
+                                $.getJSON('/bg/Signal/GetLink', { id: "3996" }, function (url) { $("#generatedLink").val(url); $("#generatedLink").select(); });
+                            });
+
+                            $("#addAnswer").click(function () {
+                                window.location = '/bg/AcstreUI/Index/3996';
+                            });
+
+                            $("#exportMenu").msDropDown();
+                            initialize();
+
+                            $("#postNote").click(function () {
+                                var description = tinyMCE.get('description').getContent();
+                                if (description.length > 1) {
+                                    $.post('/bg/Note/Create', { description: description, SignalID: '3996' }, function (result) {
+                                        if (result) {
+                                            $("#NoteView").load('/bg/Note/Index/3996');
+                                            $("#description").val("");
+                                            tinyMCE.get('description').setContent("");
+                                        }
+                                    })
+                                }
+                                else {
+                                    alert("Въведете данни в коментара");
+                                }
+                            });
+
+                            $("#changeStatus").click(function () {
+                                $("#reason").val($("#Statuses option:selected").text());
+                                $("#lbStatus").text($("#Statuses").children("option:selected").text());
+                                $("#dialog").dialog({
+                                    show: {
+                                        effect: "fade",
+                                        duration: 300
+                                    },
+                                    modal: true,
+                                    height: "auto",
+                                    width: 550,
+                                    buttons: {
+                                        "OK": function () {
+                                            var fValid = true;
+                                            fValid = fValid && checkLength($("#reason"), "причина", 3, 200);
+                                            if (fValid) {
+                                                var newStatus = $("#Statuses").val();
+                                                $.ajax({
+                                                    type: "POST",
+                                                    url: '/bg/Signal/ChangeStatus',
+                                                    data: { status: $("#Statuses").val(), signal_id: '3996', description: $("#reason").val() },
+                                                    success:
+                                                        function (result) {
+                                                            if (result != null) {
+                                                                $.post('/bg/Signal/GetStatuses', { id: '3996' }, function (res) {
+                                                                    if (res != null) {
+                                                                        var makesSelect = $('#Statuses');
+                                                                        makesSelect.empty();
+                                                                        $.each(res, function (index, r) {
+                                                                            makesSelect.append(
+                                                                                $('<option/>')
+                                                                                    .attr('Value', r.ID)
+                                                                                    .text(r.NAME)
+                                                                            );
+                                                                        });
+                                                                        $('#Statuses').change();
+                                                                    }
+                                                                });
+                                                                $("#statusName").text(result);
+                                                                $("#statusIndicator").text(result);
+                                                                ChangeStatusIcon(newStatus);
+                                                                $('#statushistory').trigger('reloadGrid');
+                                                            }
+                                                        },
+                                                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                                        toastr['error']('Статусът не е сменен', 'Статусът на сигнала не може да бъде сменен', { "closeButton": true, "timeOut": 120000 });
+                                                    }
+                                                });
+                                                $(this).dialog("close");
+                                            }
+                                            else {
+                                            }
+                                        },
+                                        Cancel: function () {
+                                            $(this).dialog("close");
+                                        }
+                                    }
+                                });
+                            });
+
+                            $.getJSON('/bg/Signal/GetLocation', { id: "3996" }, function (point) {
+                                marker = new google.maps.Marker({
+                                    position: new google.maps.LatLng(point.Lat, point.Lng),
+                                    draggable: false,
+                                    animation: google.maps.Animation.DROP,
+                                    map: map
+                                });
+
+                                map.setCenter(marker.getPosition());
+                                map.setZoom(17);
+                            });
+
+                            $.getJSON('/bg/Signal/GetPolygon', { id: "3996" }, function (polygon) {
+                                if (polygon != undefined) {
+                                    var wkt = new Wkt.Wkt();
+                                    wkt.read(polygon);
+                                    var district = wkt.toObject();
+                                    district.setMap(map);
+                                }
+                            });
+
+                            $.getJSON('/bg/Signal/GetPolyline', { id: "3996" }, function (polyline) {
+
+                                if (polyline != undefined) {
+                                    var wkt = new Wkt.Wkt();
+                                    wkt.read(polyline);
+                                    var district = wkt.toObject();
+                                    district.setMap(map);
+                                }
+
+                            });
+
+                            $("img[rel]").overlay();
+                            $(".simple_overlay").draggable();
+                        });
+
+                        function checkLength(o, n, min, max) {
+                            if (o.val().length > max || o.val().length < min) {
+                                o.addClass("ui-state-error");
+                                updateTips(String.format("Дължината на {0}  трябва да е между {1} и {2}", n, min, max));
+                                return false;
+                            } else {
+                                return true;
+                            }
+                        }
+
+                        function updateTips(t) {
+                            $("#validateTips").text(t);
+                        }
+
+                        function initialize() {
+                            var mapOptions = {
+                                center: sofia,
+                                zoom: 15,
+                                minZoom: minZoomLevel,
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            };
+                            map = new google.maps.Map(document.getElementById("map-canvas"),
+                                mapOptions);
+                            // Listen for the dragend event
+                            google.maps.event.addListener(map, 'dragend', boundsControl);
+                        }
+                    </script>
+
+                    <div id="dialog" title="Смяна на статус" style="display:none">
+                        <span id="lbStatus"></span><br />
+                        <label for="reason">Причина за смяна на статуса.</label><br />
+                        <span id="validateTips">попълването на причина е задължително.</span><br />
+                        <textarea id="reason" rows="4" cols="50"></textarea>
+
+                    </div>
+
+                    <div id="dialogGetLink" title="Връзка към сигнал" style="display: none;">
+                        <form>
+                            <textarea id="generatedLink" rows="6" cols="50"></textarea>
+                        </form>
+                    </div>
+
+
+
+
+                    <div class="display-field" style="margin:0 auto;">
+                        <blockquote>Клони на тротоара</blockquote>
+                    </div>
+
+
+                    <fieldset class="ui-widget ui-widget-content">
+                        <legend class="ui-state-default ui-tabs-active">Подробно описание</legend>
+                        <div class="display-field">
+                            <p>Голямо количество клони оставени на тротоара след почистването на двора на ПГ по фризьорство и козметика. Има купчини и от страната на ул. Чехов</p>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="ui-widget ui-widget-content">
+                        <legend class="ui-state-default ui-tabs-active">Допълнителна информация</legend>
+                        <style>
+                            .questionnaire p {
+                                margin: 0px;
+                            }
+                        </style>
+                        <div class="display-field">
+                            <table class="questionnaire"></table>
+                        </div>
+                    </fieldset>
+
+
+                    <fieldset class="ui-widget ui-widget-content">
+                        <legend class="ui-state-default ui-tabs-active">Местоположение на проблема</legend>
+                        <div id="map">
+                            <div id="map-canvas"></div>
+                        </div>
+
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="form_label"><label for="LOCATION">Местоположение</label></td>
+                                    <td>[42.6727015747932,23.3552800118923]</td>
+                                </tr>
+                                <tr>
+                                    <td class="form_label"><label for="ADDRESS">Приблизителен адрес</label></td>
+                                    <td>улица „Димчо Дебелянов“ 85-86, 1113 София, България</td>
+                                </tr>
+                                <tr>
+                                    <td class="form_label"><label for="DISTRICT_ID">Район</label></td>
+                                    <td> район Изгрев </td>
+                                </tr>
+                                <tr>
+                                    <td class="form_label"><label for="TOWN_ID">Зона</label></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="form_label"><label for="ASSOC_SIGNAL_ID">Свързан сигнал</label></td>
+                                    <td><a href="/bg/Signal/Details/3375">3375 - Купчина клони</a></td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </fieldset>
+
+                    <fieldset class="ui-widget ui-widget-content">
+                        <legend class="ui-state-default ui-tabs-active">Уточняващ адрес</legend>
+                        <table>
+                            <tr>
+                                <td class="form_label"><label for="DISTRICT_ID">Район</label></td>
+                                <td>район Изгрев</td>
+                            </tr>
+                            <tr>
+                                <td class="form_label"><label for="CITY">Нас. място</label></td>
+                                <td>София</td>
+                            </tr>
+
+                            <tr>
+                                <td class="form_label"><label for="NEIGHBOURHOOD">ж.к.</label></td>
+                                <td>ж.к. Изток</td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="form_label"><label for="STREET">Бул./Ул./Пл.</label></td>
+                                <td>улица „Димчо Дебелянов“</td>
+                            </tr>
+
+                            <tr>
+                                <td class="form_label"><label for="STREET_NO">№</label></td>
+                                <td>85-86</td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset class="ui-widget ui-widget-content">
+                        <legend class="ui-state-default ui-tabs-active">Статус</legend>
+                        <table>
+                            <tr>
+                                <td class="form_label"><label for="STATUS_ID">Статус</label></td>
+                                <td><span id="statusName">В процес на обработка</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="form_label"><label for="UserID">Потребител</label></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="form_label"><label for="SCRIPT_RESOLVE_MEAN_DURATION">Средно време за разрешаване</label></td>
+                                <td>30 дни след потвърждение</td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+
+                    <fieldset class="ui-widget ui-widget-content">
+                        <legend class="ui-state-default ui-tabs-active">Прикачени файлове</legend>
+
+                        <div style="width:120px; display:inline; min-height:50px; float:left;">
+                            <img src="/bg/Image/Thumbnail/1375" rel="#1375" style="display:block; cursor:pointer;" />
+                            <span></span>
+                        </div>
+                        <div class="simple_overlay" id="1375">
+                            <!-- large image -->
+                            <img src="/bg/Image/Index/1375" />
+
+                            <!-- image details -->
+                            <div class="overlay_details">
+
+                                <h3 style="text-overflow:ellipsis; overflow: hidden;">WP_20150318_001.jpg</h3>
+                                <div>
+                                    <p></p>
+                                    <div id="download">
+                                        <a href="/bg/Image/Download/1375">Изтегли</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="ui-widget ui-widget-content">
+                        <legend class="ui-state-default ui-tabs-active">Коментари</legend>
+                        <div id="NoteView">
+
+
+
+                            <table id="comments">
+                                <tr>
+                                    <th colspan="2"></th>
+                                </tr>
+
+
+                            </table>
+
+                        </div>
+                    </fieldset>
+                    <fieldset class="ui-widget ui-widget-content">
+                        <legend class="ui-state-default ui-tabs-active">Отговори</legend>
+
+                        <table id="clerkAnswers"></table>
+                    </fieldset>
+
+                    <fieldset class="ui-widget ui-widget-content">
+                        <legend class="ui-state-default ui-tabs-active">История</legend>
+
+                        <script type="text/javascript">
+
+                            $(function () {
+
+
+                                $("#statushistory").jqGrid({
+                                    url: '/bg/Status/IndexJson/3996',
+                                    datatype: 'json',
+                                    mtype: 'POST',
+                                    jsonReader: { repeatitems: false, id: "ID" },
+                                    colModel: [{ name: 'TimestampFrom', label: 'Дата от', formatter: 'date', formatoptions: { srcformat: 'U', newformat: 'd.m.Y H:i' }, sortable: false, sorttype: 'date', width: 65 },
+                                                { name: 'TimestampTo', label: 'Дата до', formatter: 'date', formatoptions: { srcformat: 'U', newformat: 'd.m.Y H:i' }, sortable: false, sorttype: 'date', width: 65 },
+                                                { name: 'Reason', label: 'Причина', sortable: false, width: 80 },
+                                                { name: 'Change', label: 'Промяна', sortable: false }
+                                    ],
+                                    //pager: "#gridpagerHistory",
+                                    height: 'auto',
+                                    rowNum: 100000,
+                                    altRows: true,
+                                    altclass: 'ui-priority-secondary',
+                                    viewrecords: true,
+                                    shrinkToFit: true,
+                                    autowidth: true
+                                });
+
+                                $("#clerkAnswers").jqGrid({
+                                    url: '/bg/ClerkAnswer/IndexJson/3996',
+                                    datatype: 'json',
+                                    mtype: 'POST',
+                                    jsonReader: { repeatitems: false, id: "ID" },
+                                    colModel: [{ name: 'AttachedDocuments', label: 'Прикачени документи', formatter: docLink, sortable: false, width: 60 },
+                                                { name: 'RegistrationDate', label: 'Дата на регистрация', formatter: 'date', formatoptions: { srcformat: 'U', newformat: 'd.m.Y H:i' }, sortable: false, sorttype: 'date', width: 65 },
+                                                { name: 'RegistrationNumber', label: 'Номер', sortable: false, width: 60 },
+                                                { name: 'Annotation', label: 'Описание', sortable: false, width: 80 }
+
+                                    ],
+                                    height: 'auto',
+                                    rowNum: 100000,
+                                    altRows: true,
+                                    altclass: 'ui-priority-secondary',
+                                    viewrecords: true,
+                                    shrinkToFit: true,
+                                    autowidth: true,
+                                    subGrid: true,
+
+                                    subGridUrl: '/bg/ClerkAnswer/GetFiles',
+                                    subGridOptions: {
+                                        expandOnLoad: false
+                                    },
+                                    subGridModel: [{ name: ['Име', 'Връзка'], width: [200, 100] }]
+
+                                });
+                            });
+
+                            function docLink(cellValue, options, rowObject) {
+                                if (rowObject.AttachedDocuments == 0) {
+                                    return 'Няма';
+                                }
+                                else {
+                                    return "<a style='white-space:nowrap' onclick='$(\"#clerkAnswers\").expandSubGridRow(" + rowObject.ID + ")'>" + rowObject.AttachedDocuments + " документ(а)</a>";
+                                }
+
+                            }
+
+                            function StartUrlLink(cellValue, options, rowObject) {
+                                return "<a href='" + rowObject.StartURL + "' >" + rowObject.StartURL + "</a>";
+                            }
+                        </script>
+
+                        <table id="statushistory"></table>
+                        <div id="gridpagerHistory"></div>
+                    </fieldset>
+                    <div style="text-align:center;">
+                    </div>
+                    <script>
+                        $(".new").button({ text: false, icons: { primary: "ui-icon-document" } });
+                        $(".edit").button({ text: false, icons: { primary: "ui-icon-pencil" } });
+                        $(".delete").button({ text: false, icons: { primary: "ui-icon-trash" } });
+                        $(".export").button({ text: false, icons: { primary: "ui-icon-circle-arrow-s" } });
+                        $(".link").button({ text: false, icons: { primary: "ui-icon-link" } });
+                        $(".answer").button({ text: false, icons: { primary: "ui-icon-comment" } });
+                        $("#postNote").button({ icons: { primary: "ui-icon-plus" } })
+                    </script>
+
+                </section>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="Wrapper">
+            <table style="width:100%">
+                <tr>
+                    <td>
+                        &copy; 2015 - Контактен център Столична община 1.2.0.29680/15.1.2015 г.
+                    </td>
+                    <td>
+                        <a href="/bg/Home/TermsOfUse">Общи условия</a>
+                    </td>
+                    <td>
+                        <a href="/bg/Home/PrivacyPolicy">Декларация за поверителност</a>
+                    </td>
+                    <td style="text-align:right;">
+                        Контракс АД
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -22,5 +22,9 @@ namespace SofiaCallCenter.Crawler
         public string CategoryLevel1 { get; set; }
 
         public string CategoryLevel2 { get; set; }
+
+        public decimal? LocationLat { get; set; }
+
+        public decimal? LocationLon { get; set; }
     }
 }
