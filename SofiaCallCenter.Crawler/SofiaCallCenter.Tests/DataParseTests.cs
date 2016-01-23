@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SofiaCallCenter.Crawler.Helpers;
 using HtmlAgilityPack;
 using System.IO;
+using SofiaCallCenter.Crawler;
 
 namespace SofiaCallCenter.Tests
 {
@@ -22,7 +23,7 @@ namespace SofiaCallCenter.Tests
 
             int signalId = 3996;
 
-            var signal = SofiaCallCenterParseHelper.ParseSingleSignalData(signalId, htmlDoc);
+            var signal = SofiaCallCenterCrawlerHelpers.ParseSignalFromHtmlDocument(signalId, htmlDoc);
 
             Assert.AreEqual("Клони на тротоара", signal.Title);
         }

@@ -47,8 +47,15 @@ namespace SofiaCallCenter.Crawler
             HtmlAgilityPack.HtmlDocument doc = new HtmlAgilityPack.HtmlDocument();
             doc.Load(webClient.OpenRead(signalUrl), Encoding.UTF8);
 
+            Signal signal = ParseSignalFromHtmlDocument(signalId, doc);
+
+            return signal;
+        }
+
+        public static Signal ParseSignalFromHtmlDocument(int signalId, HtmlAgilityPack.HtmlDocument doc)
+        {
             if ((doc.DocumentNode.SelectNodes("//p[@id='statusIndicator']") == null)
-                || (doc.DocumentNode.SelectNodes("//p[@id='statusIndicator']").Count == 0))
+                            || (doc.DocumentNode.SelectNodes("//p[@id='statusIndicator']").Count == 0))
             {
                 throw new SignalHtmlStructureNotDetectedException(signalId);
             }
@@ -78,7 +85,6 @@ namespace SofiaCallCenter.Crawler
             string[] categoryLevels = signalCategoryFull.Split('/');
             signal.CategoryLevel1 = categoryLevels[0];
             signal.CategoryLevel2 = categoryLevels.Length > 1 ? categoryLevels[1] : string.Empty;
-
             return signal;
         }
     }
